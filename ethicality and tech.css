@@ -20,10 +20,18 @@ body {
 #subheading {
     font-size: 15px;
 }
+.page_heading {
+    text-align: center;
+}
 #content {
     width: 90%;
     margin: auto;
 }
+ 
+input::placeholder {
+    padding: 5px;
+}
+
 form{  
     background-color: rgba(0,0,0,0.7);
     padding-top: 34px;
@@ -52,4 +60,50 @@ form .box {
     bottom: 10px;
     border: 0;
     border-radius: 5px; 
+}
+button{
+    width: 98.5%;
+    height: 2.8em;
+    position: relative;  
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px; 
+    cursor: pointer;
+   background-color: rgb(18, 219, 78);
+   color: rgb(255, 255, 2555);
+}
+#submit {
+    width: 100px;
+    height: 2.8em;
+    position: relative;  
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px; 
+}
+.comments, #marital, #exposure, #exposure2 {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+}
+textarea {
+    width: 98.5%;
+    height: 125px;
+    position: relative;
+    bottom: 17px;
+}
+textarea::placeholder {
+    position: relative;
+    top: 8px;
+    left: 5px;
+    width: 70%;
+}
+input .larger {
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 600px){
+    form (
+        width:100%;
+        margin: auto;
+    )    
 }
