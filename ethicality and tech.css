@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-image: url(jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
@@ -31,6 +32,9 @@ body {
 input::placeholder {
     padding: 5px;
 }
+input, textarea{
+    padding:10px;
+}
 form{  
     background-color: rgba(0,0,0,0.9);
     padding-top: 34px;
@@ -51,7 +55,7 @@ form .box {
     bottom: 10px;
     border: 0;
     border-radius: 5px;
-}
+  }
 #occupation select{
     width: 98.5%;
     height: 2.8em;
@@ -103,9 +107,9 @@ input .larger {
     font-weight: bold;
     text-transform: uppercase;
 }
-@media screen and (max-width: 600px){
-    form(
+@media screen and (max-width: 600px) { 
+    form{
         width: 100%;
         margin: auto;
-    )    
+    }    
 }
